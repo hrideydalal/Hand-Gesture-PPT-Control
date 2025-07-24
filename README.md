@@ -58,14 +58,6 @@ hand-gesture-ppt-control/
    ```
 3. Use your hand gestures in front of the webcam to control the slides.
 
-## Demo
-
-Add screenshots or demo GIFs in the `docs/` folder and embed them here like:
-
-```markdown
-![Demo](docs/demo.png)
-```
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
