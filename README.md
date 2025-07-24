@@ -1,64 +1,117 @@
 # Hand Gesture PPT Control
 
-This project allows users to control PowerPoint presentations using real-time hand gestures detected through a webcam. Built using OpenCV and CVZone, the system recognizes specific hand poses to navigate slides, draw on them, and erase markings without the need for a mouse or keyboard.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Built With](https://img.shields.io/badge/Tech-OpenCV%20%7C%20cvzone%20%7C%20Python-blue)
 
-## Features
+Control your PowerPoint presentations **touch-free** using real-time hand gestures and a webcam. This project uses computer vision and hand tracking to let you:
+- Move between slides
+- Draw annotations
+- Erase highlights
+- All using simple finger gestures
 
-- Navigate to next and previous slides using hand gestures  
-- Draw on the slide to highlight important content  
-- Erase previous annotations with a specific gesture  
-- Live video feed overlayed on the presentation window  
-- Gesture detection using only a standard webcam  
+Perfect for **teachers, presenters, or trainers** seeking a modern and contactless way to interact with slides.
 
-## How It Works
+---
 
-- The webcam captures the user's hand  
-- `cvzone.HandTrackingModule` detects hand landmarks  
-- Finger combinations trigger specific slide control actions:
-  - **Thumb up** → Previous slide  
-  - **Pinky up** → Next slide  
-  - **Index finger only** → Draw on slide  
-  - **Index + Middle finger** → Pointer mode  
-  - **Three fingers up** → Erase last annotation  
+## ✨ Features
 
-## Requirements
+- 👉 Navigate to **next/previous** slides using hand poses
+- ✍️ **Draw** on slides using index finger
+- 🧽 **Erase** annotations with a gesture
+- 🔴 Display your **live webcam** in the corner of the slides
+- 🖐️ All actions performed using **cvzone** hand tracking
 
-Install all dependencies using:
+---
+
+## 🧠 How It Works
+
+1. A webcam feed captures your hand in real time.
+2. `cvzone.HandTrackingModule` detects finger landmarks.
+3. Specific finger combinations trigger actions:
+
+| Gesture                    | Action             |
+|---------------------------|--------------------|
+| 👍 Thumb Up               | Previous Slide     |
+| 🤙 Pinky Up              | Next Slide         |
+| ☝️ Index Finger Only      | Draw Mode          |
+| ✌️ Index + Middle Fingers | Pointer Mode       |
+| ✋ Three Fingers Up        | Erase Annotation   |
+
+---
+
+## 🛠️ Requirements
+
+Install all dependencies with:
 
 ```bash
 pip install -r requirements.txt
-````
+```
 
-Dependencies:
+### `requirements.txt` content:
 
-* opencv-python
-* numpy
-* cvzone
+```
+opencv-python
+numpy
+cvzone
+```
 
-## File Structure
+---
+
+## 📂 File Structure
 
 ```
 hand-gesture-ppt-control/
-├── pptControl.py                # Main script
-├── requirements.txt             # Project dependencies
-├── Presentation/                # Slide images used as presentation
-├── docs/                        # (Optional) Folder for demo images or GIFs
+├── pptControl.py                # Main application script
+├── requirements.txt             # Python dependencies
+├── Presentation/                # Folder with slide images (e.g., slide1.jpg, slide2.jpg)
+├── docs/                        # Optional demo images/GIFs
 └── README.md
 ```
 
-> Note: The `Presentation/` folder must contain your presentation images (e.g., slide1.jpg, slide2.jpg...).
+> ✅ Ensure the `Presentation/` folder contains your presentation slides as images.  
+> Accepted formats: `.jpg`, `.png`, etc.
 
-## How to Run
+---
 
-1. Place your slide images in a folder named `Presentation/`
-2. Run the main script using the command below:
+## 🚀 How to Run
 
-   ```bash
-   python pptControl.py
-   ```
-3. Use your hand gestures in front of the webcam to control the slides.
+1. Add your slides as images inside a folder called `Presentation/`
+2. Launch the script:
 
-## License
+```bash
+python pptControl.py
+```
+
+3. Position your hand in front of your webcam.
+4. Use gestures to control the flow of the presentation.
+
+---
+
+## 📸 Demo (Optional)
+
+> Add a screenshot or GIF of your system in action.  
+> Example path: `docs/demo.gif`
+
+---
+
+## 📌 To-Do / Enhancements
+
+- [ ] Add gesture for fullscreen toggle
+- [ ] Voice command support
+- [ ] Gesture customization menu
+- [ ] Export presentation recording as video
+
+---
+
+## 👤 Author
+
+**Hridey Dalal**  
+📧 [hrideydalal1@gmail.com](mailto:hrideydalal1@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/hridey-/)
+
+---
+
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
