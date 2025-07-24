@@ -62,4 +62,3 @@ hand-gesture-ppt-control/
 
 This project is licensed under the [MIT License](LICENSE).
 
-```
