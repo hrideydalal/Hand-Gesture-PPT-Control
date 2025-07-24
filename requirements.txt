@@ -1,0 +1,5 @@
+opencv-python → for image processing and webcam access
+
+cvzone → wrapper around MediaPipe used for hand detection
+
+numpy → for handling numeric operations and interpolation
